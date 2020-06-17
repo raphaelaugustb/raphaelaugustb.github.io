@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellota&family=Cardo&family=Crete+Round&family=MuseoModerno&family=PT+Sans+Narrow&family=Rajdhani:wght@500&family=Staatliches&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rajdhani";
+    font-weight: normal;
+
+
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    outline: none;
+    overflow-x: hidden;
+    background-color:rgb(29, 25, 39);
+    cursor: pointer;
+
+
+
+}
+
+div.clear {
+    clear: both;
+}
+
+div.box-menu {
+    background-color: rgb(49, 46, 61);
+    height: 65px;
+    width: 100%;
+    border-bottom: 1px solid rgb(67, 63, 83);
+}
+
+div.clear div.box-menu .link-image {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50px;
+    margin: 2px 0 0 180px;
+}
+
+div.clear div.box-menu .link-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+div.clear div.box-menu .link-image:hover {
+    transition: 0.25s;
+    width: 55px;
+    height: 55px;
+    margin: 0px 0 0 180px;
+    border: 3px solid rgb(29, 25, 39);
+}
+
+div.clear div.box-menu .link-image img:hover {
+    transition: 0.35s;
+    width: 55px;
+    height: 55px;
+
+}
+
+
+div.clear div.box-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px 0 0 20px;
+    display: inline-block;
+    font-family: "Rajdhani";
+    font-weight: normal;
+}
+
+
+div.clear div.box-menu a:hover {
+    z-index: 1;
+    font-size: 25px;
+    transition: ease-out 0.5s;
+    margin: 5px 50px;
+
+
+}
+
+
+div.clear div.box-menu .ct {
+    float: right;
+    color: white;
+    text-decoration: none;
+    margin: 8px 100px 0 0;
+    background-color: rgb(41, 38, 51);
+    padding: 10px 10px;
+    border: 2px solid rgb(62, 58, 78);
+    border-radius: 5px;
+
+}
+
+div.clear div.content-box{
+    margin:50px auto;
+    width:400px;
+    height:500px;
+    border:1px solid rgb(62, 58, 78);
+    border-radius:10px;
+}
+
+div.clear div.content-box p,span{
+    text-align: center;
+    font-size:20px;
+    padding-top:20px;
+    color: white;
+}
+
+div.clear div.content-box span{
+    color:rgb(79, 66, 116);
+}
+
+div.clear div.content-box span:hover{
+    transition:linear 0.25s;
+    color: rgb(136, 104, 223);
+}
+
+
+.number p{
+    position: relative;
+    right:43px;
+}
+
+div.instagram{
+    width:40px;
+    height:40px;
+    border:2px solid rgb(62, 58, 78);
+    border-radius:50px;
+    margin:20px 0 0 100px ;
+}
+div.instagram:hover{
+      width:60px;
+      height:60px;
+      transition:0.75s ease-in-out;
+}
+
+div.instagram img{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+}
+div.instagram img:hover{
+    width:60px;
+    height:60px;
+    transition:0.75s ease-in-out;
+}
+
+div.github{
+     margin:0 auto;
+     width:40px;
+     height:40px;
+     border:2px solid rgb(62, 58, 78);
+     border-radius:50px;
+     position: relative;
+     bottom:44px;
+}
+
+div.github img{
+    width:40px;
+    height:40px;
+    border-radius:50px;
+}
+
+div.github:hover,div.github img:hover{
+    width:60px;
+    height:60px;
+    transition:0.75s ease-in-out;
+}
