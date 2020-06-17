@@ -72,14 +72,7 @@ div.clear div.box-menu a {
 }
 
 
-div.clear div.box-menu a:hover{
-	z-index: 1;
-	font-size:25px;
-	transition:ease-out 0.5s;
-	margin:5px 50px;
-	
-	
-}
+
 
 
 div.clear div.box-menu .ct {

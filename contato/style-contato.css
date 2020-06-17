@@ -77,21 +77,14 @@ div.clear div.box-menu a {
 }
 
 
-div.clear div.box-menu a:hover {
-    z-index: 1;
-    font-size: 25px;
-    transition: ease-out 0.5s;
-    margin: 5px 50px;
 
-
-}
 
 
 div.clear div.box-menu .ct {
     float: right;
     color: white;
     text-decoration: none;
-    margin: 8px 100px 0 0;
+    margin: 10px 100px 0 0;
     background-color: rgb(41, 38, 51);
     padding: 10px 10px;
     border: 2px solid rgb(62, 58, 78);
