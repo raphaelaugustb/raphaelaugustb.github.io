@@ -160,7 +160,7 @@ div.github{
      border:2px solid rgb(62, 58, 78);
      border-radius:50px;
      position: relative;
-     bottom:44px;
+     bottom:45px;
 }
 
 div.github img{
@@ -174,3 +174,38 @@ div.github:hover,div.github img:hover{
     height:60px;
     transition:0.75s ease-in-out;
 }
+
+div.discord{
+     width:40px;
+     height:40px;
+     border:2px solid rgb(62, 58, 78);
+     border-radius:50px;
+     position: relative;
+     bottom:44px;
+     float: right;
+     position: relative;
+     bottom:89px;
+     right:100px;
+}
+
+div.discord img{
+     width:40px;
+     height:40px;
+     border-radius:50px;
+}
+
+div.discord:hover,div.discord img:hover{
+     width:60px;
+     height:60px;
+     transition:0.75s ease-in-out;
+
+}
+
+.final-content{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    top:80px;
+    left:20px;
+}
+
