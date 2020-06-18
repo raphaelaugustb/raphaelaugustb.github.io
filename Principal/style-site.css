@@ -6,19 +6,16 @@
 	margin: 0;
 	font-family: "Rajdhani";
 	font-weight: normal;
-
+	
 
 }
 
-html,
-body {
+html,body{
 	height: 100%;
 	font-family: Helvetica, Arial, sans-serif;
 	outline: none;
 	overflow-x: hidden;
-
-
-
+	scroll-behavior: smooth;
 }
 
 div.clear {
@@ -44,6 +41,8 @@ div.clear div.box-menu .link-image {
 	border-radius: 50px;
 	margin: 2px 0 0 180px;
 	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition:1s;
 }
 
 div.clear div.box-menu .link-image img {
@@ -51,11 +50,15 @@ div.clear div.box-menu .link-image img {
 	height: 50px;
 	border-radius: 50px;
 	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition:1s;
 }
 
 /*Imagem Animação*/
 div.clear div.box-menu .link-image:hover {
 	transition: 0.45s;
+	-webkit-transition:0.45s;
+	-moz-transition:0.45s;
 	width: 55px;
 	height: 55px;
 	margin: 0px 0 0 180px;
@@ -64,6 +67,8 @@ div.clear div.box-menu .link-image:hover {
 
 div.clear div.box-menu .link-image img:hover {
 	transition: 0.45s;
+	-webkit-transition:0.45s;
+	-moz-transition:0.45s;
 	width: 55px;
 	height: 55px;
 
@@ -171,6 +176,8 @@ div.clear div.content-what-i-do a,div.clear div.stack-box a,div.clear div.stack-
 	font-weight: normal;
 	cursor: pointer;
 	transition: 1s;
+	-webkit-transition:1s;
+	-moz-transition:1s;
 
 }
 /*Estilização de Destaque de Texto ("a")*/
@@ -179,6 +186,8 @@ div.clear div.content-what-i-do a,div.clear div.stack-box a,div.clear div.stack-
 div.clear div.content-what-i-do a:hover,div.clear div.stack-box a:hover,div.clear div.stack-box div.images-2 div.text-2:hover {
 	color: rgb(185, 161, 255);
 	transition: 0.75s;
+	-webkit-transition:0.75s;
+	-moz-transition:0.75s;
 }
 /*Estilização de Destaque de Texto ("a") Animação*/
 
@@ -200,6 +209,8 @@ div.clear div.stack-box {
 	background-color: rgb(29, 25, 39);
 	font-weight: normal;
 	transition: 2s;
+	-webkit-transition:2s;
+	-moz-transition:2s;
 	
 
 }
@@ -244,6 +255,8 @@ div.clear div.stack-box h2{
 	border-radius: 10px;
 	background: linear-gradient(rgb(67, 63, 83), rgb(29, 25, 39));
 	transition: 0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
 	display:block;
 	-webkit-display:block;
 	
@@ -315,6 +328,8 @@ div.clear div.stack-box div.images-1 div.css img {
 	border-radius: 20px;
 	font-weight: normal;
 	transition: 0.50s;
+	-webkit-transition:0.50s;
+	-moz-transition:0.50s;
 	display: flex;
 	justify-content: center;
 	margin:10px 20px;
@@ -324,8 +339,12 @@ div.clear div.stack-box div.images-1 div.css img {
 .link-image{
 	font-size: 25px;
 	transition: linear 0.25s;
+	-webkit-transition:linear 0.25s;
+	-moz-transition:linear 0.25s;
 	color: rgb(124, 97, 199);
 	transition: 0.50s;
+	-webkit-transition:0.50s;
+	-moz-transition:0.50s;
 }
 /*Botão-Box-Filho-Animação*/
 
@@ -340,12 +359,16 @@ div.clear div.stack-box div.images-2 span {
 	color: rgb(126, 95, 218);
 	font-weight: normal;
 	transition: 1s;
+	-webkit-transition:1s;
+	-moz-transition:1s;
 }
 
 /*Estilização Texto da Image-2-span-animação*/
 div.clear div.stack-box div.images-2 span:hover {
 	color: rgb(185, 161, 255);
 	transition: 0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
 
 }
 /*Estilização Texto da Image-2-span-animação*/
@@ -564,6 +587,8 @@ div.clear div.whats-insta div.github img {
 		border-radius: 50px;
 		margin:50px 0 0 180px;
 		transition: 1s;
+		-webkit-transition:1s;
+		-moz-transition:1s;
 		position: relative;
 		top:-40px;
 		left:35px;
@@ -616,6 +641,8 @@ div.clear div.whats-insta div.github img {
 		background-color: rgb(29, 25, 39);
 		font-weight: normal;
 		transition: 2s;
+		-webkit-transition:2s;
+		-moz-transition:2s;
 
 
 	}
