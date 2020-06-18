@@ -10,28 +10,38 @@
 
 
 <body>
-
+    
     <div class="clear">
-        <div class="box-menu" id=>
+        
+        <!--Header-->
+        <div class="box-menu">
             <div class="my-image">
-                <a href="https://www.instagram.com/raphaelaugust_b/" class="link-image"><img src="pp.jpg"
+                <a href="https://www.instagram.com/raphaelaugust_b/" class="link-image"><img src="/Imagens/pp.jpg"
                         alt="my"></a>
             </div>
             
-            <a href="#">Sobre Mim</a>
-            <a href="#">Oque eu faço</a>
-            <a href="#">Minha Stack</a>
-           <a href="contato.html" class="ct">Contato</a>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#oque">Oque eu faço</a>
+            <a href="#minha">Minha Stack</a>
+           <a href="/Contato/contato.html" class="ct">Contato</a>
            
         </div>
+        <!--Header-->
 
-        <div class="content-video">
-            <video src="facebook.mp4" muted autoplay loop></video>
-        </div>
+        <!--Box Vídeo-->
+        <section class="video">
+            <div class="content-video">
+                <video src="/Imagens/facebook.mp4" muted autoplay loop></video>
+            </div>
+        </section>
+        <!--Box Vídeo-->
         
-      
+      <!--Sobre mim/Oque eu faço-->
+      <section class="Sobre mim-Oque eu faço">
+        
+        <!--Sobre Mim--> 
         <div class="content-what-i-do">
-            <h1>Sobre Mim</h1>
+            <a href="#sobre"><h1>Sobre Mim</h1></a>
             <p>Meu Nome é <a href="https://www.instagram.com/raphaelaugust_b/">Raphael Augusto</a> tenho 15
                 anos sou
                 <a href="https://www.treinaweb.com.br/blog/o-que-e-front-end-e-back-end/">Desenvolvedor
@@ -43,10 +53,10 @@
                     Full-Stack</a> e também um <a
                     href=http://www.kinglystudio.com.br/descomplica/e-desenvolvimento-mobile-o-que-e>Desenvolvedor
                     Mobile</a>. </p>
-   
+        <!--Sobre Mim-->
         
-       
-             <h1>Oque eu Faço</h1>
+        <!--Oque eu Faço-->            
+             <a href="#oque"><h1>Oque eu Faço</h1></a>
              <p>Eu sou um <a href="https://www.treinaweb.com.br/blog/o-que-e-front-end-e-back-end/">Desenvolvedor
                     Front-End</a>, ou seja eu desenvolvo tudo que você vê,<br> ou seja todo o <a>Design</a> e
                     a também todo a <a>Interação
@@ -58,92 +68,134 @@
                     Web</a>, e também estou estudando o <a
                     href=http://www.kinglystudio.com.br/descomplica/e-desenvolvimento-mobile-o-que-e>Desenvolvimento
                     Mobile</a>.</p>
+        <!--Oque eu Faço-->
+            
+            </div>
         </section>
-        </div>
+        <!--Sobre mim/Oque eu faço-->
   
     <div class="clear">
-        <div class="stack-box">
-            <div class="text-1">
-            <h1>Minha Stack</h1>  
-            <p><a href="">Stack</a> é como nós <a>Desenvolvedores</a> chamamos o <a href="">conjuto de tecnologias</a>
-                <br>que utilizamos e sabemos <a>usar</a>.</p>
-            <h2>Linguagens</h2>
-            </div>
         
-            <div class="images-1">
-                <div class="html">
-                    <img src="html5icon.png" alt="html-logo">
-                    <a href="">Facíl</a>
-                </div>
-                  <div class="javascript">
-                      <img src="javascripticon.png" alt="jss-icon">
-                      <a href="">Díficil</a>
-                  </div>
-                <div class="css">
-                    <img src="ccs3icon.png" alt="css-logo">
-                    <a href="">Intermediário</a>
-                </div>
-            </div>    
-           
-            
-            <div class="images-2">
-                <div class="text-2">
-                    <h1>Frameworks</h1>
-                    <p>Frameworks são <span>Conjutos de Pacotes</span> que trazem <span>novas
-                    funcionalidades</span>,<br>como <span>comandos</span> e até mesmo <span>estruturas</span> já <span>prontas</span>.</p>
-                </div>
-                <div class="bootstrap">
-                    <img src="bootstrap.png" alt="bootstrap-logo">
-                    <a href="">Facíl</a>
-                </div>
-                <div class="Jquery">
-                    <img src="jquery-logo.png" alt="jquery-logo">
-                    <a href="">Intermediário</a>
-                </div>
-                <div class="Materialize">
-                    <img src="materialize.png" alt="">
-                    <a href="">Intermediário</a>
-                </div>
-                <div class="ReactNative">
-                    <img src="react.png" alt="">
-                    <a href="">Difícil</a>
-                </div>
-                 <div class="less">
-                     <img src="less-logo.svg" alt="">
-                     <a href="">Difícil</a>
-                 </div>
-            </div>
-        </div>
-      
-         
-         
-        <div class="contato">
-            
-            <span>Deixe o seu Email</span>
-            <input type="text" placeholder="Email"> <input type="submit" value="Enviar">
+        <!--Minha Stack-->
+        <section class="Minha Stack">
 
-        
+            <!--Box-->
+            <div class="stack-box">
+                
+                <!--Texto1-->
+                <div class="text-1">
+                    <a href="#minha"><h1>Minha Stack</h1></a>
+                    <p><a href="">Stack</a> é como nós <a>Desenvolvedores</a> chamamos o <a href="">conjuto de tecnologias</a>
+                    <br>que utilizamos e sabemos <a>usar</a>.</p>
+                    <h2>Linguagens</h2>
+                </div>
+                <!--Texto1-->
+                
+                <!--Imagens1-->
+                <div class="images-1">
+                    <div class="html">
+                        <img src="/Imagens/html5icon.png" alt="html-logo">
+                        <a href="" class="link-image">Facíl</a>
+                    </div>
+                    <div class="javascript">
+                        <img src="/Imagens/javascripticon.png" alt="jss-icon">
+                        <a href="" class="link-image">Díficil</a>
+                    </div>
+                    <div class="css">
+                        <img src="/Imagens/ccs3icon.png" alt="css-logo">
+                        <a href="" class="link-image">Intermediário</a>
+                    </div>
+                </div>
+                <!--Imagens1-->
            
-        
-        <div class="whats-insta">
-            <div class="whatsapp">
-            <a href=""><img src="whatsapp-icon.png" alt="whats-logo"></a>
+                <!--Imagens2-->
+                <div class="images-2">
+                    <div class="text-2">
+                        <h1>Frameworks</h1>
+                        <p>Frameworks são <span>Conjutos de Pacotes</span> que trazem <span>novas
+                        funcionalidades</span>,<br>como <span>comandos</span> e até mesmo <span>estruturas</span> já <span>prontas</span>.</p>
+                    </div>
+                    <div class="bootstrap">
+                        <img src="/Imagens/bootstrap.png" alt="bootstrap-logo">
+                        <a href="" class="link-image">Facíl</a>
+                    </div>
+                    <div class="Jquery">
+                        <img src="/Imagens/jquery-logo.png" alt="jquery-logo">
+                        <a href="" class="link-image">Intermediário</a>
+                    </div>
+                    <div class="Materialize">
+                        <img src="/Imagens/materialize.png" alt="">
+                        <a href="" class="link-image">Intermediário</a>
+                    </div>
+                    <div class="ReactNative">
+                        <img src="/Imagens/react.png" alt="">
+                        <a href="" class="link-image">Difícil</a>
+                    </div>
+                    <div class="less">
+                        <img src="/Imagens/less-logo.png" alt="">
+                        <a href="" class="link-image">Difícil</a>
+                    </div>
+                    <!--Imagens2-->
             </div>
-            
-            <div class="instagram">
-            <a href="https://www.instagram.com/raphaelaugust_b/"><img src="instagram-icon.png" alt="instagram-logo"></a>
-            </div>
+            <!--Box-->
 
-             <div class="github">
-             <a href="https://github.com/raphaelaugustb"> <img src="github.png" alt="github-logo"></a>
-             </div>
-        </div>
+        </section>
+    </div>
+    
+    <!--Clear-->
+    <div class="clear"> 
+        
+        <!--Rodapé-->
+        <footer class="rodapé">
+            
+            <!--Contato-->
+            <div class="contato">
+                
+                <!--Email-->
+                <span>Deixe o seu Email</span>
+                <input type="text" placeholder="Email"> <input type="submit" value="Enviar">
+                 <!--Email-->
+                
+                <!--Redes Sociais-->
+                <div class="whats-insta">
+
+                    <!--WhatsApp-->
+                    <div class="whatsapp">
+                        <a href="contato.html"><img src="whatsapp-icon.png" alt="whats-logo"></a>
+                    </div>
+                    <!--WhatsApp-->
+                    
+                    <!--Instagram-->
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/raphaelaugust_b/"><img src="instagram-icon.png"alt="instagram-logo"></a>
+                    </div>
+                    <!--Instagram-->
+                    
+                    <!--GitHub-->
+                    <div class="github">
+                        <a href="https://github.com/raphaelaugustb"> <img src="github.png" alt="github-logo"></a>
+                    </div>
+                    <!--GitHub-->
+
+                </div>
+                <!--Redes Sociais-->
+        
 
        
         
-    </div>
-
+            </div>
+             <!--Contato-->
+     
+     <!--Aviso/Titulo-->       
      <span class="top-tittle">Redes Sociais</span>
+     <span class="advise">Infelizmente essa Hospedagem não aceita BackEnd então não vai funcionar você colocar seu Email aí :/</span>
+     <!--Aviso/Titulo-->
+     
+     </footer>
+     <!--Rodapé-->
+     
+    </div>
+    <!--Clear-->
 
     
 </body>
