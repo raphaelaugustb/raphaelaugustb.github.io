@@ -525,10 +525,8 @@ div.clear div.whats-insta div.instagram img {
 }
 
 div.clear div.whats-insta div.github img {
-	margin-right: 200px;
-	position: relative;
-	right: 32px;
-	bottom: 40px;
+	margin-top:30px;
+	margin-left:-20px;
 
 }
 
@@ -547,8 +545,9 @@ div.clear div.whats-insta div.github img {
 	color: white;
 	float: left;
 	position: relative;
-	bottom: 30px;
-	left: 25px;
+	margin-right:200px;
+
+	
 }
 
 .ct2 {
@@ -571,7 +570,7 @@ div.clear div.whats-insta div.github img {
 	text-decoration: none;
 }
 
-@media screen and (min-width:375px) and (max-width:460px){
+@media screen and (max-width:1281px){
 	div.box-menu {
 		background-color: rgb(49, 46, 61);
 		height:280px;
@@ -719,11 +718,13 @@ div.clear div.whats-insta div.github img {
 		left: 12px;
 	}
 
-	.whatsapp,.github,.instagram{
+	.whatsapp,.instagram,.github{
 		position: relative;
-		top:20px;
-		right:150px;
+		right:110px;
 	}
+	
+
 
 
 }
+
