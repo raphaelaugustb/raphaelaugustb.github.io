@@ -43,27 +43,37 @@ div.clear div.box-menu .link-image {
     background-color: white;
     border-radius: 50px;
     margin: 2px 0 0 180px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
 }
 
 div.clear div.box-menu .link-image img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
 }
 
+
 div.clear div.box-menu .link-image:hover {
-        transition:0.25s ease-in-out;
+    transition: 0.45s;
+    -webkit-transition: 0.45s;
+    -moz-transition: 0.45s;
     width: 55px;
     height: 55px;
-    margin: 0px 0 0 180px;
     border: 3px solid rgb(29, 25, 39);
 }
 
 div.clear div.box-menu .link-image img:hover {
-       transition:0.25s ease-in-out;
+    transition: 0.45s;
+    -webkit-transition: 0.45s;
+    -moz-transition: 0.45s;
     width: 55px;
     height: 55px;
- 
+
 }
 
 
@@ -212,40 +222,49 @@ div.discord:hover{
     left:20px;
 }
 
-@media screen and (min-width:375px) and (max-width:460px){
-    div.box-menu {
-        background-color: rgb(49, 46, 61);
-        height: 280px;
-        width: 100%;
-        border-bottom: 1px solid rgb(67, 63, 83);
-        max-width: 100%;
-    }
+@media screen and (max-width:722px){
+div.box-menu {
+    background-color: rgb(49, 46, 61);
+    height:160px;
+    width: 100%;
+    border-bottom: 1px solid rgb(67, 63, 83);
+    max-width: 100%;
 
-    div.clear div.box-menu .link-image {
-        width: 50px;
-        height: 50px;
-        border: 2px solid white;
-        background-color: white;
-        border-radius: 50px;
-        margin: 50px 0 0 180px;
-        transition: 1s;
-        position: relative;
-        top: -40px;
-        left: 35px;
+}
 
-    }
+div.clear div.box-menu .link-image {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50px;
+    margin: 50px 0 0 180px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    position: absolute;
+    top: -40px;
+    left: 2px;
 
-    div.clear div.box-menu a {
-        margin:5px 40px;
-        padding: 0;
-        position: relative;
-        top:80px;
-        left:-70px;
-    }
+}
 
-    .ct{
-        position: relative;
-        top:80px;
-        left:-75px;
-    }
+div.clear div.box-menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 20px 20px 0 45px;
+    display: inline-block;
+    font-family: "Rajdhani";
+    font-weight: normal;
+    position: relative;
+    top: 50px;
+    width: auto;
+
+}
+
+.ct {
+    position: relative;
+    right: 95px;
+}
+
 }
