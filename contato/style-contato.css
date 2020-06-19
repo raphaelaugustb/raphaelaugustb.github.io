@@ -6,6 +6,7 @@
     margin: 0;
     font-family: "Rajdhani";
     font-weight: normal;
+    text-decoration: none;
 
 
 }
@@ -119,7 +120,7 @@ div.clear div.content-box span:hover{
 
 .number p{
     position: relative;
-    right:43px;
+    right:20px;
 }
 
 div.instagram{
