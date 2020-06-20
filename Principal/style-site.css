@@ -503,9 +503,7 @@ div.clear div.whats-insta {
 
 }
 
-div.clear div.whats-insta div.whatsapp img,
-div.clear div.whats-insta div.instagram img,
-div.clear div.whats-insta div.github img {
+div.clear div.whats-insta div.whatsapp img,div.clear div.whats-insta div.instagram img,div.clear div.whats-insta div.github img {
 	width: 40px;
 	height: 40px;
 	float: left;
@@ -818,7 +816,7 @@ div.clear div.box-menu .ct {
 	float: right;
 	color: white;
 	text-decoration: none;
-	margin: 8px 120px 0 0;
+	margin: 8px 90px 0 0;
 	background-color: rgb(41, 38, 51);
 	padding: 10px 10px;
 	border: 2px solid rgb(62, 58, 78);
