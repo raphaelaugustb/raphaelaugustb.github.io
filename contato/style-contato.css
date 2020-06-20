@@ -23,18 +23,21 @@ body {
 
 
 }
-
 div.clear {
     clear: both;
 }
 
+/*Menu*/
 div.box-menu {
     background-color: rgb(49, 46, 61);
     height: 65px;
     width: 100%;
     border-bottom: 1px solid rgb(67, 63, 83);
+    max-width: 100%;
 }
 
+
+/*Imagem*/
 div.clear div.box-menu .link-image {
     width: 50px;
     height: 50px;
@@ -57,13 +60,14 @@ div.clear div.box-menu .link-image img {
     -moz-transition: 1s;
 }
 
-
+/*Imagem Animação*/
 div.clear div.box-menu .link-image:hover {
     transition: 0.45s;
     -webkit-transition: 0.45s;
     -moz-transition: 0.45s;
     width: 55px;
     height: 55px;
+
     border: 3px solid rgb(29, 25, 39);
 }
 
@@ -76,7 +80,11 @@ div.clear div.box-menu .link-image img:hover {
 
 }
 
+/*Imagem Animação*/
 
+/*Imagem*/
+
+/*Links*/
 div.clear div.box-menu a {
     color: white;
     font-weight: bold;
@@ -85,23 +93,32 @@ div.clear div.box-menu a {
     display: inline-block;
     font-family: "Rajdhani";
     font-weight: normal;
+
 }
 
+/*Links*/
 
 
 
 
+
+/*Botão de Contato*/
 div.clear div.box-menu .ct {
     float: right;
     color: white;
     text-decoration: none;
-    margin: 10px 100px 0 0;
+    margin: 8px 100px 0 0;
     background-color: rgb(41, 38, 51);
     padding: 10px 10px;
     border: 2px solid rgb(62, 58, 78);
     border-radius: 5px;
 
 }
+
+
+/*Botão de Contato*/
+
+/*Menu*/
 
 div.clear div.content-box{
     margin:50px auto;
@@ -222,50 +239,49 @@ div.discord:hover{
     left:20px;
 }
 
-@media screen and (max-width:722px){
-div.box-menu {
-    background-color: rgb(49, 46, 61);
-    height: 150px;
-    width: 100%;
-    border-bottom: 1px solid rgb(67, 63, 83);
-    max-width: 100%;
+@media screen and (max-width:940px) {
+    div.box-menu {
+        background-color: rgb(49, 46, 61);
+        height: 150px;
+        width: 100%;
+        border-bottom: 1px solid rgb(67, 63, 83);
+        max-width: 100%;
 
-}
+    }
 
-div.clear div.box-menu .link-image {
-    width: 50px;
-    height: 50px;
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 50px;
-    margin: 50px 0 0 200px;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    position: absolute;
-    top: -40px;
-    left: 2px;
+    div.clear div.box-menu .link-image {
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 50px;
+        margin: 50px 0 0 160px;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        position: absolute;
+        top: -40px;
+        left: 2px;
 
-}
+    }
 
-div.clear div.box-menu a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 20px 0px 0 60px;
-    display: inline-block;
-    font-family: "Rajdhani";
-    font-weight: normal;
-    position: relative;
-    top: 50px;
-    width: auto;
-    font-size: 15px;
+    div.clear div.box-menu a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 20px 0px 0 40px;
+        display: inline-block;
+        font-family: "Rajdhani";
+        font-weight: normal;
+        position: relative;
+        top: 50px;
+        width: auto;
+        font-size: 15px;
 
-}
+    }
 
-.ct {
-    position: relative;
-    right: 80px;
-}
-
+    .ct {
+        position: relative;
+        right: 80px;
+    }
 }
