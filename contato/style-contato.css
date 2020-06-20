@@ -225,7 +225,7 @@ div.discord:hover{
 @media screen and (max-width:722px){
 div.box-menu {
     background-color: rgb(49, 46, 61);
-    height:160px;
+    height: 150px;
     width: 100%;
     border-bottom: 1px solid rgb(67, 63, 83);
     max-width: 100%;
@@ -238,7 +238,7 @@ div.clear div.box-menu .link-image {
     border: 2px solid white;
     background-color: white;
     border-radius: 50px;
-    margin: 50px 0 0 195px;
+    margin: 50px 0 0 200px;
     transition: 1s;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -250,21 +250,22 @@ div.clear div.box-menu .link-image {
 
 div.clear div.box-menu a {
     color: white;
-    font-size:15px;
+    font-weight: bold;
     text-decoration: none;
-    margin:20px 30px 0 35px;
+    margin: 20px 0px 0 60px;
     display: inline-block;
     font-family: "Rajdhani";
     font-weight: normal;
     position: relative;
     top: 50px;
     width: auto;
+    font-size: 15px;
 
 }
 
 .ct {
     position: relative;
-    right: 95px;
+    right: 80px;
 }
 
 }
