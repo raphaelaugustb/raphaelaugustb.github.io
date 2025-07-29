@@ -21,11 +21,13 @@ function changeTeamName() {
   let nameTeamB = document.getElementById("inputNameTeamB").value
   document.getElementById("nameTeamA").innerText = nameTeamA
   document.getElementById("nameTeamB").innerText = nameTeamB
-  document.getElementById("nameScoreBoardTeamA").innerText = nameTeamA
-  document.getElementById("nameScoreBoardTeamB").innerText = nameTeamB
+  document.body.classList.remove("modal-open")
+  document.getElementById("formName").classList.remove("active")
   document.getElementById("formName").style.display = "none"
 }
 function openFormTeamName() {
+  document.body.classList.add("modal-open")
+  document.getElementById("formName").classList.add("active")
   document.getElementById("formName").style.display = "block"
 }
 
@@ -91,11 +93,11 @@ function resetPoints() {
   scoreboard.timeA = 0
   scoreboard.timeB = 0
   atualizarPlacar()
+  document.body.classList.remove("modal-open")
+  document.getElementById("formName").classList.remove("active")
   document.getElementById("formName").style.display = "none"
   document.getElementById("nameTeamA").innerText = "Time 1"
-  document.getElementById("nameScoreBoardTeamA").innerText = "Time 1"
   document.getElementById("nameTeamB").innerText = "Time 2"
-  document.getElementById("nameScoreBoardTeamB").innerText = "Time 2"
 }
 function removePoints(time) {
   if (time == "timeA") {

@@ -1,3 +1,30 @@
+#valueTeamB {
+  font-size: 280px;
+}
+#valueTeamA {
+  font-size: 280px;
+}
+/* ===== RESET E BASE ===== */
+body {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+input,
+span {
+  font-family: "Roboto", sans-serif;
+}
+
 main {
   width: 100%;
   align-items: center;
@@ -5,57 +32,130 @@ main {
   flex-direction: column;
 }
 
+/* === SCOREBOARD === */
+#containerScoreboard {
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between; /* Time 1 à esquerda, Time 2 à direita */
+  align-items: flex-start;
+}
+
+.teamScoreboard {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.teamScoreboard h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  background-color: transparent;
+}
+
+#containerScoreboard span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* === FORMULÁRIO MODAL === */
+
+/* Fundo escurecido e com blur quando o modal está aberto */
+body.modal-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Formulário modal centralizado na tela */
 .namesForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #f7f7f7;
   border: 4px solid #d3d3d3;
-  padding: 3rem 3rem 4rem 3rem;
-  border-radius: 5px;
-  display: none;
+  padding: 2.5rem 3rem 3rem 3rem;
+  border-radius: 10px;
+  width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  display: none; /* oculto por padrão */
+  z-index: 1000;
+}
+
+.namesForm.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .namesForm form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .namesForm form input {
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  border-color: #717171;
-  background-color: #fff;
-  outline: transparent;
+  padding: 0.5rem 0.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.4rem;
+  border-radius: 6px;
+  border: 1.5px solid #717171;
+  font-size: 18px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.namesForm form input:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 5px #2196f3;
 }
 
 .namesForm form button {
-  margin-top: 2rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  border-color: #717171;
-  background-color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Container principal dos times */
+.namesForm form button:hover {
+  background-color: #1976d2;
+}
+
+/* === TIMES E CONTROLES === */
 .teamContainer {
   display: flex;
   justify-content: space-between; /* Time 1 esquerda, Time 2 direita */
-  align-items: flex-start; /* Alinha pelo topo */
-  width: 90vw; /* ocupa 90% da largura da viewport */
+  align-items: flex-start; /* alinhado pelo topo */
+  width: 90vw;
   margin: 0 auto;
   padding: 1rem 0;
 }
 
-/* Cada time */
 .containerTeamA,
 .containerTeamB {
   display: flex;
   flex-direction: column; /* empilha verticalmente */
   align-items: center; /* centraliza horizontalmente */
-  width: 40vw; /* largura de cada time */
+  width: 40vw;
   min-height: 200px;
 }
 
-/* Centraliza texto dos nomes */
 .containerTeamA h3,
 .containerTeamB h3 {
   width: 100%;
@@ -111,38 +211,7 @@ button.add-three:active {
   transform: translateY(0);
 }
 
-/* Placar total */
-#containerScoreboard {
-  width: 90vw;
-  margin: 2rem auto;
-  display: flex;
-  justify-content: space-between; /* Time 1 à esquerda, Time 2 à direita */
-  align-items: flex-start;
-}
-
-.teamScoreboard {
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-/* Centraliza título dos times e placar */
-.teamScoreboard h3 {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  background-color: transparent;
-}
-
-/* Estilo dos spans do placar */
-#containerScoreboard span {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-/* Estilo dos botões - e + */
+/* Botões - e + estilizados */
 .buttons-main button {
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
@@ -166,43 +235,39 @@ button.add-three:active {
   transform: translateY(0);
 }
 
-/* Botão reset estilizado */
-.reset-button {
-  margin: 3rem auto 0 auto;
-  font-size: 18px;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  border: 2px solid #717171;
-  background-color: #f44336;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  display: block;
-  width: fit-content;
-}
-
-/* Botão para alterar nome */
+/* Botões reset e alterar nome com mesmo tamanho */
+.reset-button,
 .name-button {
-  margin: 1rem auto 0 auto;
   font-size: 18px;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 0.8rem;
   border-radius: 8px;
   border: 2px solid #717171;
-  background-color: #2196f3;
   color: white;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  display: block;
-  width: fit-content;
+  display: inline-block;
+  width: 180px; /* largura fixa igual */
+  text-align: center;
 }
 
-/* Centraliza span dos pontos */
-.teamContainer span {
-  margin: 0.4rem;
+/* Backgrounds diferentes */
+.reset-button {
+  background-color: #f44336;
+  margin-right: 1rem; /* espaçamento entre botões */
+}
+
+.reset-button:hover {
+  background-color: #e53935;
+}
+
+.name-button {
+  background-color: #2196f3;
+}
+
+.name-button:hover {
+  background-color: #1976d2;
 }
 
 /* Footer com botões alinhados horizontalmente e centralizados */
@@ -216,12 +281,12 @@ button.add-three:active {
   flex-wrap: nowrap;
 }
 
-body {
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
+/* Centraliza span dos pontos */
+.teamContainer span {
+  margin: 0.4rem;
 }
 
-/* === RESPONSIVE === */
+/* === RESPONSIVO === */
 @media (max-width: 768px) {
   .teamContainer,
   #containerScoreboard {
@@ -249,5 +314,17 @@ body {
     padding: 0.6rem 1rem;
     max-width: none;
     width: auto;
+  }
+}
+
+/* Responsivo para botões reset e name - largura automática em telas pequenas */
+@media (max-width: 480px) {
+  .reset-button,
+  .name-button {
+    width: auto;
+    flex: 1;
+  }
+  .footer {
+    gap: 0.8rem;
   }
 }
