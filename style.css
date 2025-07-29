@@ -12,6 +12,7 @@ main {
   border-radius: 5px;
   display: none;
 }
+
 .namesForm form {
   display: flex;
   flex-direction: column;
@@ -24,52 +25,229 @@ main {
   background-color: #fff;
   outline: transparent;
 }
+
 .namesForm form button {
   margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
   padding: 0.4rem 0.8rem;
   border-radius: 5px;
   border-color: #717171;
   background-color: #fff;
+  cursor: pointer;
 }
+
+/* Container principal dos times */
 .teamContainer {
+  display: flex;
+  justify-content: space-between; /* Time 1 esquerda, Time 2 direita */
+  align-items: flex-start; /* Alinha pelo topo */
+  width: 90vw; /* ocupa 90% da largura da viewport */
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Cada time */
+.containerTeamA,
+.containerTeamB {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center; /* centraliza horizontalmente */
+  width: 40vw; /* largura de cada time */
+  min-height: 200px;
+}
+
+/* Centraliza texto dos nomes */
+.containerTeamA h3,
+.containerTeamB h3 {
+  width: 100%;
   text-align: center;
+  margin: 0 0 1rem 0;
+  background-color: transparent;
 }
-.teamContainer button {
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  border-color: #717171;
-  background-color: #fff;
+
+/* Botões - e + em linha */
+.buttons-main {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Placar (número) centralizado */
+.containerTeamA > span,
+.containerTeamB > span {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+/* Botão +3 abaixo do placar, centralizado */
+button.add-three {
+  display: block;
+  margin: 0 auto 1rem auto;
+  padding: 0.8rem 1.2rem;
+  max-width: 120px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #717171;
+  background-color: #4caf50;
+  color: white;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
-.teamContainer span {
-  margin: 0.4rem;
-}
-.reset-button {
-  margin-top: 3rem;
-  font-size: 14px;
+button.add-three:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
 }
 
+button.add-three:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
+
+/* Placar total */
 #containerScoreboard {
-  margin: 2rem 0;
-  display: none;
-  justify-content: space-between;
+  width: 90vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between; /* Time 1 à esquerda, Time 2 à direita */
+  align-items: flex-start;
 }
 
-#containerScoreboard span {
-  font-size: 30px;
-}
 .teamScoreboard {
+  width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 10rem;
   gap: 1rem;
 }
+
+/* Centraliza título dos times e placar */
+.teamScoreboard h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  background-color: transparent;
+}
+
+/* Estilo dos spans do placar */
+#containerScoreboard span {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Estilo dos botões - e + */
+.buttons-main button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #717171;
+  background-color: #4caf50;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.buttons-main button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.buttons-main button:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
+
+/* Botão reset estilizado */
+.reset-button {
+  margin: 3rem auto 0 auto;
+  font-size: 18px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #717171;
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: fit-content;
+}
+
+/* Botão para alterar nome */
+.name-button {
+  margin: 1rem auto 0 auto;
+  font-size: 18px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #717171;
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: block;
+  width: fit-content;
+}
+
+/* Centraliza span dos pontos */
+.teamContainer span {
+  margin: 0.4rem;
+}
+
+/* Footer com botões alinhados horizontalmente e centralizados */
+.footer {
+  width: 100%;
+  max-width: 400px;
+  margin: 3rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
 body {
   font-size: 24px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .teamContainer,
+  #containerScoreboard {
+    flex-direction: column;
+    width: 95vw;
+    align-items: center;
+  }
+
+  .containerTeamA,
+  .containerTeamB,
+  .teamScoreboard {
+    width: 100vw;
+    margin-bottom: 2rem;
+  }
+
+  #containerScoreboard span {
+    font-size: 32px;
+  }
+
+  .buttons-main button,
+  .reset-button,
+  .name-button,
+  button.add-three {
+    font-size: 16px;
+    padding: 0.6rem 1rem;
+    max-width: none;
+    width: auto;
+  }
 }

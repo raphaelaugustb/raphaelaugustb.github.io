@@ -2,64 +2,66 @@
 <html lang="en">
   <head>
     <script src="./script.js"></script>
-<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Copa Truco</title>
-
+    <title>Campeonato de Truco</title>
   </head>
   <body>
     <main>
-    <header>
-      <h1>Copa Truco</h1>
-    </header>
-    <div id="containerScoreboard">
-      <div class="teamScoreboard">
-          <span id="nameScoreBoardTeamA">Time 1</span>
+      <header>
+        <h1>Campeonato de Truco</h1>
+      </header>
+      <div id="containerScoreboard">
+        <div class="teamScoreboard">
+          <h3 id="nameScoreBoardTeamA">Time 1</h3>
           <span id="valueScoreBoardTeamA">0</span>
+        </div>
+        <div class="teamScoreboard">
+          <h3 id="nameScoreBoardTeamB">Time 2</h3>
+          <span id="valueScoreBoardTeamB">0</span>
+        </div>
       </div>
-      <div class="teamScoreboard">
-        <span id="nameScoreBoardTeamB">Time 1</span>
-        <span id="valueScoreBoardTeamB">0</span>
-    </div>
-
-    </div>
-    <div class="namesForm" id="formName">
-    <form action="" onsubmit="changeTeamName()">
-        <h3>Nome Time 1</h3>
-        <input type="text" id="inputNameTeamA">
-        <h3>Nome Time 2</h3>
-        <input type="text"id="inputNameTeamB">
-        <button type="submit">Adicionar Nomes</button>
-    </form>
-    </div>
+      <div class="namesForm" id="formName">
+        <form action="" onsubmit="changeTeamName(); return false;">
+          <h3>Nome Time 1</h3>
+          <input type="text" id="inputNameTeamA" />
+          <h3>Nome Time 2</h3>
+          <input type="text" id="inputNameTeamB" />
+          <button type="submit">Adicionar Nomes</button>
+        </form>
+      </div>
       <div class="teamContainer">
         <div class="containerTeamA">
           <h3 id="nameTeamA">Time 1</h3>
-          <div>
-            <button onclick="removePoints('timeA')" >-</button>
-            <span id="valueTeamA">0</span>
+          <div class="buttons-main">
+            <button onclick="removePoints('timeA')">-</button>
             <button onclick="addPoints('timeA')">+</button>
-            <button onclick="addthreePoints('timeA')">+3</button>
           </div>
+          <span id="valueTeamA">0</span>
+          <button class="add-three" onclick="addthreePoints('timeA')">
+            +3
+          </button>
         </div>
 
-      <div>
-        <div>
+        <div class="containerTeamB">
           <h3 id="nameTeamB">Time 2</h3>
-        <div>
-        <div>
-          <button onclick="removePoints('timeB')" >-</button>
+          <div class="buttons-main">
+            <button onclick="removePoints('timeB')">-</button>
+            <button onclick="addPoints('timeB')">+</button>
+          </div>
           <span id="valueTeamB">0</span>
-          <button onclick="addPoints('timeB')">+</button>
-          <button onclick="addthreePoints('timeB')">+3</button>
+          <button class="add-three" onclick="addthreePoints('timeB')">
+            +3
+          </button>
         </div>
       </div>
-    </div>
-    <nav>
-      <button class="reset-button" onclick="resetPoints()">Resetar</button>
-      <button class="name-button" onclick="openFormTeamName()">Alterar nome dos times</button>
-    </nav>
+      <div class="footer">
+        <button class="reset-button" onclick="resetPoints()">Resetar</button>
+        <button class="name-button" onclick="openFormTeamName()">
+          Alterar nome dos times
+        </button>
+      </div>
     </main>
   </body>
 </html>
